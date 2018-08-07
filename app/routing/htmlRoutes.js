@@ -1,28 +1,10 @@
-// server = require('../../server')
-// const express = require("express");
-// const bodyParser = require("body-parser");
-// const path = require("path");
-// const app = express();
-// const PORT = 8080;
+const path = require("path");
+module.exports = function(app){
+  app.get('/', function(req, res){
+      res.sendFile(path.join(__dirname, "../public/home.html"))
+  });
 
-// function htmlRoutes() {
-//   app.use(function(req, res){
-//     routes = {
-//       '/': '../public/home.html',
-//       '/survey': '../public/survey.html'
-//     };
-
-//     let url = req.url;
-
-//     if (routes[url] !== undefined) {
-//         res.writeHead(200, {"Content-Type": "text/plain"});
-//         res.sendfile(route[url]);
-//         console.log("Client requested", url);
-//     } else {
-//         res.writeHead(404, {"Content-Type": "text/plain"});
-//         res.sendfile('404.html');
-//         console.log("Client requested page not found - 404 error");
-//     }
-// });
-// }
-// module.exports = htmlRoutes
+  app.get("/survey", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/survey.html"));
+  });
+}
