@@ -14,6 +14,11 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
         crossorigin="anonymous"></script>
+        <style>
+            .custom-select{
+                max-width: 200px;
+            }
+        </style>
 </head>
 
 <body>
@@ -21,193 +26,166 @@
         <h1>Survey Questions</h1>
         <hr>
         <h3>About You</h3>
-        <form action='http://127.0.0.1:8080/api/survey' method='post' enctype='application/json'>
+        <form action='../routing/apiRoutes.js' method='POST' enctype='application/json'>
             <div class="form-group">
                 <label for="input-name">Name (Required)</label>
-                <input type="text" class="form-control" id="name" placeholder="Bob Dylan">
+                <input type="text" class="form-control" id="userName" placeholder="Bob Dylan">
             </div>
             <div class="form-group">
                 <label for="photo">Link to Photo (Required)</label>
-                <input type="text" class="form-control" id="photo" placeholder="link">
+                <input type="text" class="form-control" id="userPhoto" placeholder="link">
             </div>
             <hr>
             <h3>
                 <strong>Question 1</strong>
             </h3>
             <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    Select an Option
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item one-selected" href="#">1 (Strongly Disagree)</a>
-                    <a class="dropdown-item two-selected" href="#">2</a>
-                    <a class="dropdown-item three-selected" href="#">3</a>
-                    <a class="dropdown-item four-selected" href="#">4</a>
-                    <a class="dropdown-item five-selected" href="#">5 (Strongly Agree)</a>
-                </div>
+            <div class="input-group mb-3">
+                <select class="custom-select" id="question01">
+                    <option selected>Choose...</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
             </div>
             <h3>
                 <strong>Question 2</strong>
             </h3>
             <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    Select an Option
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item one-selected" href="#">1 (Strongly Disagree)</a>
-                    <a class="dropdown-item two-selected" href="#">2</a>
-                    <a class="dropdown-item three-selected" href="#">3</a>
-                    <a class="dropdown-item four-selected" href="#">4</a>
-                    <a class="dropdown-item five-selected" href="#">5 (Strongly Agree)</a>
-                </div>
+            <div class="input-group mb-3">
+                <select class="custom-select" id="question02">
+                    <option selected>Choose...</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
             </div>
             <h3>
                 <strong>Question 3</strong>
             </h3>
             <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    Select an Option
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item one-selected" href="#">1 (Strongly Disagree)</a>
-                    <a class="dropdown-item two-selected" href="#">2</a>
-                    <a class="dropdown-item three-selected" href="#">3</a>
-                    <a class="dropdown-item four-selected" href="#">4</a>
-                    <a class="dropdown-item five-selected" href="#">5 (Strongly Agree)</a>
-                </div>
+            <div class="input-group mb-3">
+                <select class="custom-select" id="question03">
+                    <option selected>Choose...</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
             </div>
             <h3>
                 <strong>Question 4</strong>
             </h3>
             <h4>You rarely do something just out of sheer curiosity.</h4>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    Select an Option
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item one-selected" href="#">1 (Strongly Disagree)</a>
-                    <a class="dropdown-item two-selected" href="#">2</a>
-                    <a class="dropdown-item three-selected" href="#">3</a>
-                    <a class="dropdown-item four-selected" href="#">4</a>
-                    <a class="dropdown-item five-selected" href="#">5 (Strongly Agree)</a>
-                </div>
+            <div class="input-group mb-3">
+                <select class="custom-select" id="question04">
+                    <option selected>Choose...</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
             </div>
             <h3>
                 <strong>Question 5</strong>
             </h3>
             <h4>People can rarely upset you.</h4>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    Select an Option
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item one-selected" href="#">1 (Strongly Disagree)</a>
-                    <a class="dropdown-item two-selected" href="#">2</a>
-                    <a class="dropdown-item three-selected" href="#">3</a>
-                    <a class="dropdown-item four-selected" href="#">4</a>
-                    <a class="dropdown-item five-selected" href="#">5 (Strongly Agree)</a>
-                </div>
+            <div class="input-group mb-3">
+                <select class="custom-select" id="question05">
+                    <option selected>Choose...</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
             </div>
             <h3>
                 <strong>Question 6</strong>
             </h3>
             <h4>It is often difficult for you to relate to other people’s feelings.</h4>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    Select an Option
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item one-selected" href="#">1 (Strongly Disagree)</a>
-                    <a class="dropdown-item two-selected" href="#">2</a>
-                    <a class="dropdown-item three-selected" href="#">3</a>
-                    <a class="dropdown-item four-selected" href="#">4</a>
-                    <a class="dropdown-item five-selected" href="#">5 (Strongly Agree)</a>
-                </div>
+            <div class="input-group mb-3">
+                <select class="custom-select" id="question06">
+                    <option selected>Choose...</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
             </div>
             <h3>
                 <strong>Question 7</strong>
             </h3>
             <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    Select an Option
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item one-selected" href="#">1 (Strongly Disagree)</a>
-                    <a class="dropdown-item two-selected" href="#">2</a>
-                    <a class="dropdown-item three-selected" href="#">3</a>
-                    <a class="dropdown-item four-selected" href="#">4</a>
-                    <a class="dropdown-item five-selected" href="#">5 (Strongly Agree)</a>
-                </div>
+            <div class="input-group mb-3">
+                <select class="custom-select" id="question07">
+                    <option selected>Choose...</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
             </div>
             <h3>
                 <strong>Question 8</strong>
             </h3>
             <h4>You rarely get carried away by fantasies and ideas.</h4>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    Select an Option
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item one-selected" href="#">1 (Strongly Disagree)</a>
-                    <a class="dropdown-item two-selected" href="#">2</a>
-                    <a class="dropdown-item three-selected" href="#">3</a>
-                    <a class="dropdown-item four-selected" href="#">4</a>
-                    <a class="dropdown-item five-selected" href="#">5 (Strongly Agree)</a>
+                <div class="input-group mb-3">
+                    <select class="custom-select" id="question08">
+                        <option selected>Choose...</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
                 </div>
-            </div>
-            <h3>
-                <strong>Question 9</strong>
-            </h3>
-            <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    Select an Option
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item one-selected" href="#">1 (Strongly Disagree)</a>
-                    <a class="dropdown-item two-selected" href="#">2</a>
-                    <a class="dropdown-item three-selected" href="#">3</a>
-                    <a class="dropdown-item four-selected" href="#">4</a>
-                    <a class="dropdown-item five-selected" href="#">5 (Strongly Agree)</a>
+                <h3>
+                    <strong>Question 9</strong>
+                </h3>
+                <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or
+                    not.</h4>
+                <div class="input-group mb-3">
+                    <select class="custom-select" id="question09">
+                        <option selected>Choose...</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
                 </div>
-            </div>
-            <h3>
-                <strong>Question 10</strong>
-            </h3>
-            <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    Select an Option
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item one-selected" href="#">1 (Strongly Disagree)</a>
-                    <a class="dropdown-item two-selected" href="#">2</a>
-                    <a class="dropdown-item three-selected" href="#">3</a>
-                    <a class="dropdown-item four-selected" href="#">4</a>
-                    <a class="dropdown-item five-selected" href="#">5 (Strongly Agree)</a>
+                <h3>
+                    <strong>Question 10</strong>
+                </h3>
+                <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or
+                    not.</h4>
+                <div class="input-group mb-3">
+                    <select class="custom-select" id="question10">
+                        <option selected>Choose...</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
                 </div>
-            </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
         </form>
         <button>
             <a href="/">Home</a>
         </button>
-    </div>
+        </div>
+      
 </body>
 
 </html>
