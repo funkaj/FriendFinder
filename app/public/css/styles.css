@@ -50,3 +50,6 @@ html {
  .backdrop{
     background-color:rgb(207, 207, 207, 0.5);
 } 
+.navbar-light .navbar-toggler {
+    border: none;
+}
