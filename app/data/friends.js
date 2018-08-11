@@ -2,7 +2,7 @@
 friends = [
 {
     "name":"Ahmed",
-    "photo":"",
+    "photo":"https://www.gettyimages.com/gi-resources/images/Embed/new/embed2.jpg",
     "scores":[5, 1, 4, 4, 5, 1, 2, 5, 4, 1]
   },
   {
