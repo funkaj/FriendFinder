@@ -53,3 +53,7 @@ html {
 .navbar-light .navbar-toggler {
     border: none;
 }
+
+#userMatchImage {
+    max-width: 400px;
+}
