@@ -24,14 +24,14 @@
             <hr>
             <h3>About You</h3>
             <!-- User Inputs -->
-            <form action='/api/friends' method='POST' enctype='application/json'>
+            <form action='/api/friends' method='POST' enctype='application/json' class='needs-validation'>
                 <div class="form-group">
                     <label for="input-name">Name (Required)</label>
-                    <input type="text" class="form-control" id="userName" placeholder="Bob Dylan">
+                    <input type="text" class="form-control" id="userName" placeholder="Bob Dylan" required>
                 </div>
                 <div class="form-group">
                     <label for="photo">Link to Photo (Required)</label>
-                    <input type="text" class="form-control" id="userPhoto" placeholder="link">
+                    <input type="text" class="form-control" id="userPhoto" placeholder="link" required>
                 </div>
                 <hr>
                 <!-- Question Fields -->
@@ -41,7 +41,7 @@
                 <h6>Your mind is always buzzing with unexplored ideas and plans.</h6>
                 <div class="input-group mb-3">
                     <select class="custom-select" id="question01">
-                        <option selected>Choose...</option>
+                        <option selected required>Choose...</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -55,7 +55,7 @@
                 <h6>Generally speaking, you rely more on your experience than your imagination.</h6>
                 <div class="input-group mb-3">
                     <select class="custom-select" id="question02">
-                        <option selected>Choose...</option>
+                        <option selected required>Choose...</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -69,7 +69,7 @@
                 <h6>You find it easy to stay relaxed and focused even when there is some pressure.</h6>
                 <div class="input-group mb-3">
                     <select class="custom-select" id="question03">
-                        <option selected>Choose...</option>
+                        <option selected required>Choose...</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -83,7 +83,7 @@
                 <h6>You rarely do something just out of sheer curiosity.</h6>
                 <div class="input-group mb-3">
                     <select class="custom-select" id="question04">
-                        <option selected>Choose...</option>
+                        <option selected required>Choose...</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -97,7 +97,7 @@
                 <h6>People can rarely upset you.</h6>
                 <div class="input-group mb-3">
                     <select class="custom-select" id="question05">
-                        <option selected>Choose...</option>
+                        <option selected required>Choose...</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -111,7 +111,7 @@
                 <h6>It is often difficult for you to relate to other people’s feelings.</h6>
                 <div class="input-group mb-3">
                     <select class="custom-select" id="question06">
-                        <option selected>Choose...</option>
+                        <option selected required>Choose...</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -125,7 +125,7 @@
                 <h6>In a discussion, truth should be more important than people’s sensitivities.</h6>
                 <div class="input-group mb-3">
                     <select class="custom-select" id="question07">
-                        <option selected>Choose...</option>
+                        <option selected required>Choose...</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -139,7 +139,7 @@
                 <h6>You rarely get carried away by fantasies and ideas.</h6>
                 <div class="input-group mb-3">
                     <select class="custom-select" id="question08">
-                        <option selected>Choose...</option>
+                        <option selected required>Choose...</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -155,7 +155,7 @@
                 </h6>
                 <div class="input-group mb-3">
                     <select class="custom-select" id="question09">
-                        <option selected>Choose...</option>
+                        <option selected required>Choose...</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -170,7 +170,7 @@
                 </h6>
                 <div class="input-group mb-3">
                     <select class="custom-select" id="question10">
-                        <option selected>Choose...</option>
+                        <option selected required>Choose...</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -257,6 +257,23 @@
                 endingTop: '10%'
             })
         }
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                let forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                let validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
     </script>
 </body>
 
