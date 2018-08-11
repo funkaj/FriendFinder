@@ -1,4 +1,4 @@
-# [FriendFinder](https://funkaj.github.io/FriendFinder/)
+# [FriendFinder](https://blooming-anchorage-67787.herokuapp.com/)
 LIRI is a _Language_ Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.
 
 # How to use
