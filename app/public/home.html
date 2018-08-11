@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Friend Finder</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -17,24 +20,26 @@
 </head>
 
 <body>
-    <div class='container'>
-    <div class="jumbotron">
-            
-        <h1 class="display-4" style='font-weight: 400;' ><span class="badge badge-secondary" style='background: transparent; color: black'><i class="fab fa-facebook-square"></i></span>Friend Finder</h1>
-        <p class="lead">Answer a few basic questions.</p>
-        <p>Then find the friend with the greatest compatibility!</p>
-        <a class="btn btn-primary btn-lg" href="/survey" role="button"><span class="badge badge-secondary" style='background: transparent; color: white'><i class="far fa-list-alt"></i></span>Go to Survey</a>
-      </div>
-      <footer class='footer'>
-          <div class='container'>
-              <p>
-                  <a href="/api/friends">API Friends List</a>
-                  ' | '
-                  <a href="https://github.com/funkaj">Github</a>
-              </p>
-          </div>
-      </footer>
+    <div class='background'>
+    <div class="jumbotron" style='background: transparent;'>
+        <h1 class="display-4">
+            <span class="badge badge-secondary" style='background: transparent; color: rgb(49, 49, 49)'>
+                <i class="fab fa-facebook-square"></i>
+            </span>Friend Finder</h1>
+        <h3 class="lead">Answer a few basic questions.</h3>
+        <h3 class='lead'>Then find the friend with the greatest compatibility!</h3>
+        <a class="btn btn-primary btn-lg" href="/survey" role="button" style='background-color: rgb(177, 177, 177); color: black; border: none;'>
+            <span class="badge badge-secondary" style='background: transparent; color: rgb(5, 5, 5)'>
+                <i class="far fa-list-alt"></i>
+            </span>Go to Survey</a>
+        <footer class='footer'>
+                <p>
+                    <a href="/api/friends"><i class="fas fa-user-friends icons"></i></a>
+                    <a href="https://github.com/funkaj"><i class="fab fa-github-square icons"></i></a>
+                </p>
+        </footer>
     </div>
+</div>
 </body>
 
 </html>

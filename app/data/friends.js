@@ -1,3 +1,4 @@
+// array to match and push user input to
 friends = [
 {
     "name":"Ahmed",
