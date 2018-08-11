@@ -4,6 +4,9 @@ LIRI is a _Language_ Interpretation and Recognition Interface. LIRI will be a co
 # How to use
 Click the link to take the survey. Fill out the form. and answer the 10 questions. Click on the submit button to see your new friend!
 
+![Example 1](app/images/friend_finder01.png?raw=true "Example 1")
+![Example 2](app/images/friend_finder02.png?raw=true "Example 2")
+
 ## Built with/using
 * Javascript
 * JQueary
