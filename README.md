@@ -1,5 +1,5 @@
 # [FriendFinder](https://blooming-anchorage-67787.herokuapp.com/)
-LIRI is a _Language_ Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.
+A full-stack site will take in results from your users' surveys, then compare their answers with those stored in an array. The app will then display the name and picture of the user with the best overall match, and add the user to the array for future visits. 
 
 # How to use
 Click the link to take the survey. Fill out the form. and answer the 10 questions. Click on the submit button to see your new friend!
