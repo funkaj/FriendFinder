@@ -20,6 +20,6 @@ friends = [
     "photo":"https://storage.googleapis.com/or-cdn-eu/ImgProd_Extra/colourvue_crazy_mad_hatter_extra_image.jpg",
     "scores":[1, 1, 1, 1, 1, 5, 5, 5, 5, 5]
   },
-]
+];
 
 module.exports = friends
