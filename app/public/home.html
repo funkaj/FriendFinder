@@ -1,78 +1,129 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Friend Finder</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+			integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+			integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+			crossorigin="anonymous"
+		/>
+	</head>
 
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Friend Finder</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
-        crossorigin="anonymous">
-</head>
+	<body>
+		<div class="background">
+			<div class="jumbotron" style="background: transparent;">
+				<!-- navbar -->
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarNav"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler">
+							<a class="navbar-brand" href="#">Menu</a>
+						</span>
+					</button>
+					<div class="container" style="justify-content: center;">
+						<div class="row">
+							<div class="collapse navbar-collapse" id="navbarNav">
+								<ul class="navbar-nav" style="flex-direction: row;">
+									<li class="nav-item active col-sm-5">
+										<a
+											class="nav-link"
+											href="https://www.adamfunkart.com"
+											target="blank"
+											><b>Portfolio</b>
+											<span class="sr-only"></span>
+										</a>
+									</li>
+									<li class="nav-item active col-sm-5">
+										<a
+											class="nav-link"
+											href="https://github.com/funkaj"
+											target="blank"
+											><b>Github</b>
+											<span class="sr-only"></span>
+										</a>
+									</li>
+									<li class="nav-item active col-sm-5">
+										<a
+											class="nav-link"
+											href="https://www.linkedin.com/in/adam-funk-5831b8152/"
+											target="blank"
+											><b>LinkedIn</b>
+											<span class="sr-only"></span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<h1 class="display-4">
+					<span
+						class="badge badge-secondary"
+						style="background: transparent; color: rgb(49, 49, 49)"
+					>
+						<i class="fab fa-facebook-square"></i> </span
+					>Friend Finder
+				</h1>
+				<h3 class="lead">Answer a few basic questions.</h3>
+				<h3 class="lead">
+					Then find the friend with the greatest compatibility!
+				</h3>
+				<a
+					class="btn btn-primary btn-lg"
+					href="/survey"
+					role="button"
+					style="background-color: rgb(177, 177, 177); color: black; border: none;"
+				>
+					<span
+						class="badge badge-secondary"
+						style="background: transparent; color: rgb(5, 5, 5)"
+					>
+						<i class="far fa-list-alt"></i> </span
+					>Go to Survey</a
+				>
+				<footer class="footer">
+					<p>
+						<a href="/api/friends"><i class="fas fa-user-friends icons"></i></a>
+						<a href="https://github.com/funkaj"
+							><i class="fab fa-github-square icons"></i
+						></a>
+					</p>
+				</footer>
+			</div>
+		</div>
+	</body>
 
-<body>
-    <div class='background'>
-        <div class="jumbotron" style='background: transparent;'>
-            <!-- navbar -->
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler">
-                        <a class="navbar-brand" href="#">Menu</a>
-                    </span>
-                </button>
-                <div class='container' style='justify-content: center;'>
-                    <div class='row'>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav" style='flex-direction: row;'>
-                                <li class="nav-item active col-sm-5">
-                                    <a class="nav-link" href="https://www.adamfunkart.com" target='blank'><b>Portfolio</b>
-                                        <span class="sr-only"></span>
-                                    </a>
-                                </li>
-                                <li class="nav-item active col-sm-5">
-                                    <a class="nav-link" href="https://github.com/funkaj" target='blank'><b>Github</b>
-                                        <span class="sr-only"></span>
-                                    </a>
-                                </li>
-                                <li class="nav-item active col-sm-5">
-                                    <a class="nav-link" href="https://www.linkedin.com/in/adam-funk-5831b8152/" target='blank'><b>LinkedIn</b>
-                                        <span class="sr-only"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <h1 class="display-4">
-                <span class="badge badge-secondary" style='background: transparent; color: rgb(49, 49, 49)'>
-                    <i class="fab fa-facebook-square"></i>
-                </span>Friend Finder</h1>
-            <h3 class="lead">Answer a few basic questions.</h3>
-            <h3 class='lead'>Then find the friend with the greatest compatibility!</h3>
-            <a class="btn btn-primary btn-lg" href="/survey" role="button" style='background-color: rgb(177, 177, 177); color: black; border: none;'>
-                <span class="badge badge-secondary" style='background: transparent; color: rgb(5, 5, 5)'>
-                    <i class="far fa-list-alt"></i>
-                </span>Go to Survey</a>
-            <footer class='footer'>
-                <p>
-                    <a href="/api/friends"><i class="fas fa-user-friends icons"></i></a>
-                    <a href="https://github.com/funkaj"><i class="fab fa-github-square icons"></i></a>
-                </p>
-            </footer>
-        </div>
-    </div>
-</body>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-    crossorigin="anonymous"></script>
-
+	<script
+		src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+		integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+		crossorigin="anonymous"
+	></script>
 </html>

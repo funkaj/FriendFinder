@@ -1,59 +1,58 @@
 html {
-    max-width: 100vw;
+	max-width: 100vw;
 }
 
 .background {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-height: 100vh;
-    background: url('friends1.jpg')no-repeat center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	min-height: 100vh;
+	background: url('friends1.jpg') no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .jumbotron h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(49, 49, 49);
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: rgb(49, 49, 49);
 }
 .jumbotron h3 {
-    font-size: 1.5rem;
-    font-weight: 300;
+	font-size: 1.5rem;
+	font-weight: 300;
 }
-.footer{    
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        text-align: left;
-        align-content: space-around;
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: left;
+	align-content: space-around;
 }
 .icons {
-    font-size: 2rem;
-    color: rgb(236, 236, 236);
-    margin: .5rem;
+	font-size: 2rem;
+	color: rgb(236, 236, 236);
+	margin: 0.5rem;
 }
 .custom-select {
-    max-width: 200px;
+	max-width: 200px;
 }
 .sidePanels {
-    min-height: 100vh;
-    background: url('side.jpeg')no-repeat center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-   
+	min-height: 100vh;
+	background: url('side.jpeg') no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
- .backdrop{
-    background-color:rgb(207, 207, 207, 0.5);
-} 
+.backdrop {
+	background-color: rgb(207, 207, 207, 0.5);
+}
 .navbar-light .navbar-toggler {
-    border: none;
+	border: none;
 }
 
 #userMatchImage {
-    max-width: 400px;
+	max-width: 400px;
 }
